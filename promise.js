@@ -51,6 +51,7 @@ new Promise((res, rej) => {
     console.log(val)
 });
 
+
 //async realize
 
 // async function checkNumber(data) {
