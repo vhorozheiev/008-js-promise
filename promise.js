@@ -36,16 +36,14 @@ function printResult(result) {
 }
 
 new Promise((res, rej) => {
-    checkNumber(24, res, rej)
+    checkNumber(11, res, rej)
 }).then(val => {
     new Promise((res, rej) => {
         isOddNumber(val, res, rej);
     }).then(val => {
         printResult(val);
     }).catch(val => {
-        if (typeof val === 'number') {
-            console.log(`Your number is ${val}`);
-        }
+        printResult(val);
     })
 }).catch(val => {
     console.log(val)
